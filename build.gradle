@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'MailRuHW'
+version '1.0'
+
+mainClassName = ''
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    vertxVersion = '3.8.0'
+}
+
+dependencies {
+    implementation group: 'io.vertx', name: 'vertx-core', version: "$vertxVersion"
+    implementation group: 'io.vertx', name: 'vertx-hazelcast', version: "$vertxVersion"
+}
